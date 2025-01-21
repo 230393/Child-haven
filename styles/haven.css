@@ -113,7 +113,7 @@
 .banner-text{
     width: 640px;
     height: 331px;
-    order: 1;
+    
 }
 .enroll-btn{
     font-size: 1.25rem;
@@ -128,7 +128,7 @@
     position: relative;
     bottom: 0px;
     right: 0px;
-    order: 2;
+    
 }
 .banner-section{
     margin-bottom: 60px;
@@ -139,10 +139,9 @@
     flex-direction: column;
     justify-items: center;
 }
-.card-section{
-    justify-content:  space-between;
+.card-section{   
     margin:0 141px ;
-    
+    justify-content: center;
 }
 .card-grand-pa{
     display: grid;
@@ -224,21 +223,124 @@ transition: transform, 1s linear;
 .forward-backward-btn-container{
     margin-top: 80px;
 }
+/* news related photo */
+#november-19{
+    padding: 15px 19px;
+    border: none;
+    border-radius: 47px;
+    font-size: 0.95875rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(60, 216, 232);
+    margin-left: 38px;
+    position: relative;
+    top: -84px;
+}
+.stories{
+    text-align: center;
+    font-size: 2.875rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.toddler-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.classroom{
+    font-size: 0.95875rem;
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+    text-align: center;
+}
+.toddler{
+    
+} 
+.news-bar-grand-pa{
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    align-items: center;
+}
+.news-bar-section{
+    margin:0 141px ;
+    margin-top: 120px;
+    background-image: url(../assets/bg.png);
+    background: url(image), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+    justify-content: center;
+}
+.news-bar-container{
+    gap: 19px;
+}
+.news-photo-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+.news-4{
+    width: 290.69px;
+    height: 301.61px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+}
+#news-4{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.share-headline{
+    text-align:center;
+    
+}
+.november{
+    margin-left: 37px;
+    position: relative;
+    top: -20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 178, 38);
+    padding: 10px 19px;
+    border: none;
+    border-radius: 47.93px;
+}
+#november{
+    background-color: rgb(93, 88, 240);
+}
+.toddler-container{
+    height: 630px;
+    width: 540px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    
+}
+#toddler-container{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-bottom: 55px;
+}
 @media screen and (max-width:546px) {
     .display-hide{
         display: none;
     }
     .banner-section,
     .banner-section,
+    .content,
     .card-grand-pa
     {
         flex-direction: column;
+        align-items: center;
     }
     .hero-img{
         order: 1;
     }
     .banner-text{
         order: 2;
+    }
+    .banner-section{
+        width: 80%;
+    }
+    .card-container-1,
+    .card-container-2,
+    .card-container-3{
+        width: 100%;
     }
     .content{
         
