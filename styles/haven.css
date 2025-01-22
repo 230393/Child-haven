@@ -246,7 +246,7 @@ transition: transform, 1s linear;
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 45px;
+    
 }
 .classroom{
     font-size: 0.95875rem;
@@ -255,20 +255,23 @@ transition: transform, 1s linear;
     text-align: center;
 }
 .toddler{
-    
+    transform: scaleY(200px);
 } 
 .news-bar-grand-pa{
     background-image: url(../assets/bg.png);
     background-size: cover;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .news-bar-section{
     margin:0 141px ;
     margin-top: 120px;
+    height: 1018px;
     background-image: url(../assets/bg.png);
     background: url(image), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
     justify-content: center;
+    align-content: center;
 }
 .news-bar-container{
     gap: 19px;
@@ -310,12 +313,76 @@ transition: transform, 1s linear;
     width: 540px;
     border-radius: 16px;
     background-color: rgb(255, 255, 255);
-    
 }
 #toddler-container{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     margin-bottom: 55px;
+}
+.view-all-btn{
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 12px;
+    height: 50px;
+    width: 197px;
+    margin-top: 80px;
+    background-color: rgb(17, 17, 17);
+    color: rgba(255, 255, 255, 1.00);
+}
+/* footer related styles */
+.footer{
+    height: 519px;
+    background-color: rgb(1, 172, 253);
+    margin:0 141px ;
+    justify-content: space-around;
+    align-items: center;
+}
+.education-container{
+    align-items: center;
+}
+.cartoon-backpack{
+    height: 70px;
+    width: 70px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.kids-education{
+    font-size: 2.625rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.importance-of-education{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.about-school{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.nav-menu{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.social-media{
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.father-teresa{
+    align-items: center;
+    align-content: center;
+}
+.nav-menu-container{
+    align-items: center;
+    align-content: center;
+}
+.social-media{
+    align-items: center;
+    align-content: center;
 }
 @media screen and (max-width:576px) {
     #display-hide{
@@ -359,6 +426,9 @@ transition: transform, 1s linear;
     }
     .toddler-container{
         display: none;
+    }
+    .footer{
+        flex-direction: column;
     }
 }
 
