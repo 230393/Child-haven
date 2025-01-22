@@ -261,6 +261,7 @@ transition: transform, 1s linear;
     background-image: url(../assets/bg.png);
     background-size: cover;
     align-items: center;
+    justify-content: center;
 }
 .news-bar-section{
     margin:0 141px ;
@@ -316,17 +317,29 @@ transition: transform, 1s linear;
     border-top-right-radius: 16px;
     margin-bottom: 55px;
 }
-@media screen and (max-width:546px) {
-    .display-hide{
+@media screen and (max-width:576px) {
+    #display-hide{
         display: none;
     }
-    .banner-section,
-    .banner-section,
-    .content,
-    .card-grand-pa
+    .banner-section
     {
         flex-direction: column;
-        align-items: center;
+        
+    }
+    .card-grand-pa{
+         display: flex;
+         flex-direction: column;
+        }
+    .back-pack {
+        display: block;
+        height: 50px; 
+        width: 50px;
+        
+    }
+    .hamburger-bar{
+        font-size: 2rem;
+        font-weight: 700;
+        
     }
     .hero-img{
         order: 1;
@@ -337,12 +350,20 @@ transition: transform, 1s linear;
     .banner-section{
         width: 80%;
     }
-    .card-container-1,
-    .card-container-2,
-    .card-container-3{
-        width: 100%;
+    .news-bar-grand-pa{
+        flex-direction: column;
     }
-    .content{
-        
+    .news-bar-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .toddler-container{
+        display: none;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .hamburger-bar{
+        display: none;
     }
 }
